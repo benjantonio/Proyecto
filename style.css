@@ -13,7 +13,7 @@ body {
 /* SECCIÓN 1*/
 
 .encabezado {
-    background-color: rgb(211, 211, 211);
+    background: #ffffffe0;
 }
 
 .alto {
@@ -106,7 +106,7 @@ nav li {
     width: 20%;
     height: 30px;
     padding: 5px 10px;
-    background-color: #003170d2;
+    background-color: #112981e0;
     border: 1px solid #000;
     text-align: center;
     color: #fff;
@@ -279,4 +279,8 @@ a img:hover {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     background: #112981e0;
+}
+
+.texto-barra {
+    text-align: center;
 }
