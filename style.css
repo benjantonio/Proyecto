@@ -293,7 +293,7 @@ a img:hover {
     background-color: #808080e0;
 }
 
-.infoextra {
-    margin-right: 100vh;
-    text-align: center;
+[class*="col-md"] {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
