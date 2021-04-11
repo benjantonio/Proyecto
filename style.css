@@ -284,3 +284,16 @@ a img:hover {
 .texto-barra {
     text-align: center;
 }
+
+
+/* Final de página */
+
+.footer-base {
+    margin-top: 10vh;
+    background-color: #808080e0;
+}
+
+.infoextra {
+    margin-right: 100vh;
+    text-align: center;
+}
