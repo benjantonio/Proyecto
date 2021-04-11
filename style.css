@@ -13,12 +13,20 @@
 
     /* SECCIÓN 1*/
 
-    .encabezado{
+    .sec1{
         background-color: rgb(211, 211, 211);
     }
 
-    .alto{
+    .alto1{
         height: 32vh;
+    }
+
+    .alto2{
+        height: 85vh;
+    }
+
+    .alto3{
+        height: 52vh;
     }
 
     .portada {
