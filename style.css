@@ -1,16 +1,17 @@
-    * {
+/** {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    
+    */
+
     body {
         background-color: #ffffff;
     }
     
     .portada {
         width: 100%;
-        height: 400px;
+        height: 500px;
         background: url("imagenes/Overhead-Full-Famil2B23F33-HORIZ.jpg");
         background-size: 100%;
         animation: movimiento 10s infinite linear alternate;
@@ -48,7 +49,7 @@
     
     p {
         width: 100%;
-        max-width: 500px;
+        /*max-width: 500px;*/
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
@@ -68,14 +69,11 @@
         color: #434343;
         cursor: pointer;
     }
+    
+    
     /*CSS CARRUSEL*/
     
-    .seccionCarrusel {
-        margin-top: 100px;
-        margin-bottom: 0px;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+    
     /*CSS CARRUSEL*/
     
     .imagenCarrusel {
@@ -84,8 +82,6 @@
     
     .alert {
         text-align: center;
-        margin-left: 100px;
-        margin-right: 100px;
     }
     
     nav a {
@@ -137,40 +133,47 @@
     a img:hover {
         color: #fff;
     }
+    
+    
     /*CSS pie de texto carrusel*/
     
     .pieCarrusel {
         margin-left: 100px;
         margin-right: 100px;
     }
+    
+    
     /*CSS MENÚ INICIO*/
     
     .barraMenu {
         margin-bottom: 20px;
     }
+    
+    
     /*CSS TIPO REPUESTOS*/
     
-    div.gallery {
+    .gallery {
         margin: 35px;
         border: 2px solid rgb(118, 136, 243);
-        float: left;
+        /* float: left;*/
         width: 170px;
         margin-left: 150px;
     }
     
-    div.gallery:hover {
+    .gallery:hover {
         border: 1px solid rgb(5, 0, 0);
     }
     
-    div.gallery img {
+    .gallery img {
         width: 100%;
         height: auto;
     }
     
-    div.desc {
+    .desc {
         padding: 30px;
         text-align: center;
     }
+<<<<<<< HEAD
 
     /*CSS WHATSAPP FLOTANTE*/
     .whatsappfloat{
@@ -195,4 +198,94 @@
     
     .my-whatsappfloat{
         margin-top:16px;
+=======
+    
+    
+    /*CSS WHATSAPP FLOTANTE*/
+    
+    .whatsappfloat {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+    
+    .whatsappfloat:hover {
+        text-decoration: none;
+        color: #25d366;
+        background-color: #fff;
+    }
+    
+    .my-whatsappfloat {
+        margin-top: 16px;
+    }
+    
+    .divPortada {}
+    
+    .divCarrusel {
+        background: #ecefff;
+    }
+    
+    .textoPortada {
+        width: 500px;
+        padding-left: 40px;
+        padding-top: 80px;
+    }
+    
+    .divMarcas {
+        padding-left: 290px;
+        padding-right: 290px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: #98b5ea;
+    }
+    
+    .divEmpresa {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: #112981e0;
+    }
+    
+    .textoMarcas p {
+        color: black;
+    }
+    
+    .textoMarcas {
+        margin-top: 30px;
+    }
+    
+    .imagenMarca {
+        width: 150px;
+        height: 150px;
+        border-radius: 80px;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        display: none;
+    }
+    
+    .divRelleno {
+        height: 100px;
+    }
+    
+    .divContacto {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background: #98b5ea;
+    }
+    
+    .contactanos {
+        margin-left: 20%;
+>>>>>>> main
     }
