@@ -212,10 +212,8 @@ a img:hover {
 }
 
 .divMarcas {
-    padding-left: 290px;
-    padding-right: 290px;
     padding-top: 100px;
-    padding-bottom: px;
+    padding-bottom: 50px;
     background: #98b5ea;
 }
 
@@ -239,6 +237,7 @@ a img:hover {
     width: 150px;
     height: 150px;
     border-radius: 80px;
+    margin-bottom: 80px;
 }
 
 .carousel-control-prev-icon,
@@ -259,6 +258,9 @@ a img:hover {
 .contactanos {
     margin-left: 20%;
 }
+
+
+/*TIPO RESPUESTOS*/
 
 body {
     background-color: #f0f3f5;
@@ -344,4 +346,26 @@ body {
 
 .project_widget .pw_content .pw_meta span {
     font-weight: 500
+}
+
+
+/*FIN TIPO REPUESTOS*/
+
+.imagenRepuesto {
+    width: 100%;
+    height: 250px;
+}
+
+.tituloRepuesto {
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.cuadroImagen {
+    margin-bottom: 30px;
+}
+
+.fondoImagenM {
+    margin-left: 300px;
+    margin-right: 300px;
 }
