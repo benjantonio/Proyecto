@@ -286,14 +286,35 @@ a img:hover {
 }
 
 
-/* Final de página */
+/* Footer, Final de página */
 
 .footer-base {
     margin-top: 10vh;
     background-color: #808080e0;
 }
 
-[class*="col-md"] {
-    padding-top: 5px;
-    padding-bottom: 5px;
+.footer-base p {
+    margin: 0;
+}
+
+.text-s {
+    line-height: 24px;
+}
+
+.copy-row .col-md-12 {
+    text-align: center;
+}
+
+.copy-row .copy-text {
+    letter-spacing: 1px;
+    padding: 25px 20px 20px 20px;
+}
+
+.copy-row .copy-text {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.copy-row .col-md-12 {
+    text-align: center;
 }
