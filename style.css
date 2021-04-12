@@ -496,3 +496,38 @@
     .contactanos {
         margin-left: 20%;
     }
+
+
+    /* Footer, Final de página */
+
+.footer-base {
+    margin-top: 10vh;
+    background-color: #eeeeee;
+}
+
+.footer-base p {
+    margin: 0;
+}
+
+.copy-row .col-md-12 {
+    text-align: center;
+    color: #000000;
+}
+
+.text-s,
+.text-uppercase {
+    line-height: 24px;
+    width: 100%;
+    float: none;
+    color: #000000;
+}
+
+.copy-row .copy-text {
+    letter-spacing: 1px;
+    padding: 25px 20px 20px 20px;
+}
+
+.copy-row .copy-text {
+    font-size: 12px;
+    line-height: 20px;
+}
