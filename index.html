@@ -18,7 +18,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
-
+    <style>html {
+        scroll-behavior: smooth;
+    }</style>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -57,10 +59,10 @@
                   </label>
                   <label class="logo">HCabrera</label>
                   <ul>
-                    <li><a href="#">Conócenos</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Repuestos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#barra3">Conócenos</a></li>
+                    <li><a href="#sec5">Servicios</a></li>
+                    <li><a href="#sec6">Repuestos</a></li>
+                    <li><a href="#sec7">Contacto</a></li>
                   </ul>
                 </nav>
               </div>
@@ -98,7 +100,7 @@
 
         <!-- SECCIÓN 3 -->
         <section class="sec3 alto3">
-            <div class="barra3">
+            <div id="barra3">
                 <h2 class="textbarra3">C O N Ó C E N O S</h2>
             </div>
             <div class="barra3-2">
@@ -135,8 +137,8 @@
         <!-- SECCIÓN 4 -->
         <section class="sec4 alto4">
         <!--CARRUSEL DE IMÁGENES-->
-            <div class="divCarrusel">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="row divCarrusel">
+                <div id="col-sm-12 col-md-12 carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="500"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="500"></button>
@@ -193,10 +195,20 @@
 
         <!-- SECCIÓN 5 -->
         <section class="sec5 alto5">
+            <div id="sec5">
             <div class="row">
+                
                 <div class="serv-sec">
-                    <p>SERVICIOS</p>
+                    <p class="servicios-sec5">SERVICIOS</p>
+                    <p>
+                        <button class="btn btn-primary">
+                    <span class="spinner-border spinner-border-sm"></span>
+                    Zona en proceso..
+                    </button>
+                    </p>
                 </div>
+            </div>
+        
             </div>
         </section>
 
@@ -205,6 +217,7 @@
         <!-- SECCIÓN 6 -->
         <section class="sec6 alto6">
             <!-- MARCAS -->
+            <div id="sec6">
             <div class="divMarcas">
                 <div class="col-md-12">
                     <div class="row text-center ">
@@ -363,6 +376,7 @@
                     </div>
                 </div>
             </div>
+        </div>
              <!--FIN DIV MARCAS-->
         </section>
    
@@ -371,6 +385,7 @@
 
         <!-- SECCIÓN 7 -->
         <section class="sec7 alto7">
+            <div id="sec7"></div>
             <!-- CONTACTO -->
             <div class="divContacto">
                 <div class="col-md-12">

@@ -5,6 +5,8 @@
     }
     */
 
+    
+
     body {
         background-color: #f1f1f1;
     }
@@ -32,7 +34,8 @@
 
     .sec3{
         height: 100vh;
-        margin-bottom: 100px;
+        
+        
     }
 
     .sec4{
@@ -257,10 +260,11 @@
           display: block;
         }
         ul{
+          margin-top: 4vh;
           position: fixed;
           width: 100%;
           height: 100vh;
-          background: #2f75ad;
+          background: #1b9bff;
           top: 80px;
           left: -100%;
           text-align: center;
@@ -305,13 +309,24 @@
     /*CSS pie de texto carrusel*/
     
     .pieCarrusel {
+        
         margin-left: 100px;
         margin-right: 100px;
     }
     
     
-    /*CSS MENÚ INICIO*/
     
+
+    .servicios-sec5{
+        margin-top: 50vh;
+    }
+
+
+
+
+
+
+
 
     
     
@@ -392,6 +407,7 @@
     }
     
     .divCarrusel {
+       position: relative;
         background: #ecefff;
     }
     
@@ -402,7 +418,7 @@
     }
     
     
-    .barra3{
+    #barra3{
         background-color: #2e2e2e;
         width: auto;
         margin: 0px auto;
