@@ -51,7 +51,6 @@ p {
     width: 100%;
     /*max-width: 500px;*/
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -358,7 +357,10 @@ body {
 
 .tituloRepuesto {
     margin-bottom: 80px;
-    margin-top: 80px;
+    margin-top: 10px;
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size: 30px;
 }
 
 .cuadroImagen {
@@ -368,4 +370,11 @@ body {
 .fondoImagenM {
     margin-left: 300px;
     margin-right: 300px;
+}
+
+.descripcionRepuesto {
+    letter-spacing: 9px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: black;
 }
