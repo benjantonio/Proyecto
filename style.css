@@ -1,6 +1,6 @@
 /* ✿BODY✿ ◕‿◕*/
 body{
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     color: #000000;
 }
 
@@ -404,10 +404,7 @@ body{
   text-align: center;
 }
 /*TIPO RESPUESTOS*/
-body {
-  background-color: #f0f3f5;
-  margin-top: 20px;
-}
+
 .boxs {
   position: relative;
   margin-bottom: 30px;
@@ -492,8 +489,8 @@ body {
   margin-bottom: 30px;
 }
 .fondoImagenM {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .descripcionRepuesto {
   letter-spacing: 9px;
