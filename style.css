@@ -642,7 +642,7 @@ body{
   border-bottom-color: #ddd;
 }
 
-#benviar {
+#bEnviar {
   background: none;
   border: none;
   color: #f5d000;
@@ -652,7 +652,7 @@ body{
   
 }
 
-#benviar:hover {
+#bEnviar:hover {
   color: #bed398;
 }
 
@@ -936,6 +936,5 @@ footer{
   width: 140px;
   padding: 3px;
   position: absolute;
-  text-align: center;
 
 }
