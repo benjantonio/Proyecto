@@ -104,14 +104,16 @@
     <section id="sec1">
 
         <!--█████ PORTADA █████-->
-        <div class="col-sm-12 col-md-12 divPortada">
-            <div class="col-sm-12 col-md-12 portada">
-                <div class="col-sm-12 col-md-12 capa">
-                    <div class="col-sm-12 col-md-12 textoPortada">
+        <div class="divPortada">
+            <div class="portada">
+                <div class="capa">
+                    <div class="textoPortada">
                         <!--TEXTO DENTRO DE PORTADA-->
-                        <p class="bienvenido">!BIENVENIDO! <br>AQUÍ ENCONTRARÁS LOS MEJORES SERVICIOS Y REPUESTOS DE LAS MEJORES MARCAS.
+                        <p class="bienvenido">!BIENVENIDO!
                         </p>
                         <br>
+                        <p class="bienvenidomensaje">AQUÍ ENCONTRARÁS LOS MEJORES SERVICIOS Y REPUESTOS DE LAS MEJORES MARCAS.
+                        </p>
                         <p class="bienvenidomarcas">ELME, BROMMA, MERITOR, REXNORD, REGINACHAIN, KNOTT, KESSLER, SPICER, TEREX, RENOLD, ENTRE OTRAS.
                         </p>
                         <p>
@@ -145,7 +147,7 @@
             <hr>
             <p class="servyrep-info">Servicios y repuestos.</p>
         </div>
-        <div class="row">
+        <div class="row infosec2">
             <div class="col-sm-12 col-md-4">
                 <p class="infoizquierda"><br> Contamos con más de <strong>25 años</strong> de experencia, con un equipo capacitado profesionalmente en el rubro. 
                     <br> <br> Nuestro OBJETIVO está enfocado en apoyar el sistema de gestión del área de mantención de nuestros clientes.
@@ -478,7 +480,7 @@
                 <div class="screen-body">
                   <div class="screen-body-item left">
                     <div class="app-title">
-                      <span>¡ENVÍANOS</span>
+                      <span>¡ENVÍANOS</span><br>
                       <span>UN MENSAJE!</span>
                     </div>
                     <div class="app-contact">Contacto Directo: +569 82400802</div>
@@ -493,10 +495,11 @@
                         <input type="text" id="itEmail" class="app-form-control" placeholder="EMAIL">
                         <div id="mensaje2" class="errores">Email inválido</div>
                     </div>
-                      <div class="app-form-group">
+                      <div class="app-form-group celu">
+                          <p class="verificador">+569</p>
                         <input type="text" id="itCelular" maxlength="8" class="app-form-control integer" placeholder="CELULAR (8 dígitos)">
-                        <div id="mensaje3" class="errores">Celular inválido</div>
                     </div>
+                    <div id="mensaje3" class="errores">Celular inválido</div>
                       <div class="app-form-group message">
                         <input type="text" id="itMensaje" maxlength="2000" class="mensaje-contacto app-form-control" placeholder="MENSAJE">
                         <div id="mensaje4" class="errores">Escribe un mensaje</div>
@@ -593,8 +596,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src=".js/script.js"></script>
-    <script src=".js/jquery-3.6.0.js"></script>
-    <script src=".js/jquery.numeric.js"></script>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.numeric.js"></script>
+    <script src="js/script.js"></script>
 </body>
 <html>
