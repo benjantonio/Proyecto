@@ -11,8 +11,12 @@ body{
     .divMenu {
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
-        background: #303030e0;
-        
+        background: #000000;
+        position: fixed;
+        width: 100%;
+        height: 5vh;
+
+        z-index: 2;
     }
     
     .contIzq {
@@ -55,7 +59,8 @@ body{
   z-index: 2;
   padding: 4px 0;
   transition: all 0.3s ease;
-  background-color: #ffbc03ce; /*FONDO MENÚ*/
+  background-color: #ffbc03e7; /*FONDO MENÚ*/
+  margin-top: 5vh;
 }
 .navbar.sticky{
   background: #222222;
@@ -125,6 +130,14 @@ body{
   top: 20px;
 }
 
+@media screen and (max-width: 767px){
+  .navbar{
+    margin-top: 8vh;
+  }
+  .divMenu{
+    height: 10vh;
+  }
+}
 
 @media (max-width: 1230px) {
   .contentmenu{
@@ -186,6 +199,9 @@ body{
   .navbar .logo a{
     font-size: 27px;
   }
+
+
+
 } /*-------------FIN-------------*/
 
 
@@ -193,25 +209,63 @@ body{
 
 /*========== SECCIÓN PORTADA ==========*/
 
+@font-face {
+  font-family: Boldfinger;
+  src: url(fonts/Tunning.ttf);
+}
+
+@font-face {
+  font-family: Speed;
+  src: url(fonts/sufrimeda.ttf);
+}
+
 .bienvenido{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    color: #ffffff;
+    font-family: Boldfinger;
+    font-size: 60px;
+    color: #ffd900;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);;
+}
+
+.bienvenidomensaje{
+  font-family: Speed;
+    font-size: 25px;
+    color: #ffd900;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.438);;
 }
 
 .bienvenidomarcas{
     font-size: 17px;
     color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.438);;
 }
+
+@media screen and (max-width: 770px) {
+  .bienvenido{
+    font-size: 38px;
+}
+
+.bienvenidomensaje{
+    font-size: 20px;
+}
+
+.bienvenidomarcas{
+    font-size: 15px;
+}
+  }
 
 .divPortada {
     width: 100%;
-    height: 120%;
+    height: 100vh;
     padding-top: auto;
     padding-left: 0;
     padding-right: 0;
-
 }
+
+@media screen and (max-width: 869px) {
+  .divPortada {
+    height: 120%;
+}
+  }
 
 .portada {
     padding: 0;
@@ -224,10 +278,21 @@ body{
 }
 
 .textoPortada {
-    width: 700px;
+    width: auto;
     padding-left: 10vh;
     padding-top: 35vh;
+    padding-right: 20vh;
 }
+
+@media screen and (max-width: 869px) {
+  .textoPortada {
+    padding-top: 35vh;
+    padding-bottom: 10vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    text-align: center;
+}
+  }
 
 @keyframes movimiento {
     from {
@@ -266,6 +331,15 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+@media screen and (max-width: 869px) {
+  .textobarra{
+    font-size: 27px;
+    margin: auto;
+    padding-left: 0px;
+    text-align: center;
+}
+  }
+
 /*--ZONA INFORMACIÓN CONÓCENOS--*/
 .hcabrera-info{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -282,6 +356,12 @@ body{
 
 .barra-separadora-2{
     padding: 0px;
+}
+
+.infosec2{
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
 }
 
 .infoizquierda{
@@ -488,10 +568,7 @@ body{
 .cuadroImagen {
   margin-bottom: 30px;
 }
-.fondoImagenM {
-  margin-left: 100px;
-  margin-right: 100px;
-}
+
 .descripcionRepuesto {
   letter-spacing: 9px;
   text-align: center;
@@ -512,6 +589,21 @@ body{
   height: 100px;
 }
 
+.fondoImagenM {
+  margin-right: 85px;
+  margin-left: 85px;
+}
+
+@media screen and (max-width: 1080px) {
+  .fondoImagenM {   
+    margin-right: 1px;
+    margin-left: 1px;
+  }
+}
+
+
+
+
 
 /*▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ SECCIÓN 5 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄*/
 *, *:before, *:after {
@@ -527,10 +619,11 @@ body{
 }
 
 .container {
-  flex: 0 1 700px;
+  max-width: 700px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
+  
 }
 
 .screen {
@@ -585,7 +678,7 @@ body{
 }
 
 .app-title {
-  display: flex;
+  
   flex-direction: column;
   position: relative;
   color: #f5d000;
@@ -614,7 +707,8 @@ body{
 }
 
 .app-form-group.message {
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .app-form-group.buttons {
@@ -697,7 +791,12 @@ body{
   .screen-body-item {
     padding: 0;
   }
+
+  .app-title{
+    font-size: 27px
+  }
 }
+
 
 
 
@@ -907,7 +1006,7 @@ footer{
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.329);
     z-index: 100;
 }
 
@@ -930,12 +1029,31 @@ footer{
   background: rgba(255, 0, 0, 0.692);
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   color: #fff;
-  display: none;
+  display:none;
   font-size: 14px;
   margin-top: -40px;
   margin-left: 250px;
   width: 140px;
   padding: 3px;
   position: absolute;
-
 }
+
+.celu{
+  display: flex;
+  margin-bottom: 0;
+}
+
+.verificador{
+  margin-bottom: 0;
+margin-top: 8px;
+margin-right: 5px;
+color: #f5d000;
+}
+
+#itMensaje{
+  height: 60px;
+}
+
+
+
+
