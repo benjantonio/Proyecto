@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 /* ✿BODY✿ ◕‿◕*/
 body{
     background-color: #f3f3f3;
@@ -8,26 +12,60 @@ body{
 /*========== HEADER SUPERIOR ==========*/
 
 /*-----BARRA TOP CONTACTO-----*/
-    .divMenu {
+    .barra-top {
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
-        background: #303030e0;
-        
+        background: linear-gradient(to bottom, #494949, #1a1a1a);
+        position: fixed;
+        width: 100%;
+        height: 5vh;
+
+        z-index: 2;
     }
     
-    .contIzq {
-        text-align: center;
+    .contenido{
+      margin-top: 10px;
+    }
+    
+    .whats{
+      text-align: right;
+    }
+    
+    
+    .clima{
+      display: flex;
+    }
+    
+    .line{
+      margin: 0px 4px 0px 4px;
+    }
+    
+    .information{
+      margin-left: 4px;
     }
 
-    .contDer {
-        text-align: center;
-        padding-right: 0%;
-        margin-right: 0%;
+    @media screen and (max-width: 1225px){
+      .clima{
+        font-size: 12px;
+      }
+
+      .whats{
+        font-size: 14px;
+      }
+
+      .em{
+        font-size: 14px;
+      }
     }
-    
+
+    @media screen and (max-width: 967px){
+      .clima{
+        font-size: 9px;
+      }
+    }
+
+
 /*---------MENÚ-----------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
 .logo-menu{
   width: 40%;
 }
@@ -55,7 +93,8 @@ body{
   z-index: 2;
   padding: 4px 0;
   transition: all 0.3s ease;
-  background-color: #ffbc03ce; /*FONDO MENÚ*/
+  background-color: #ffbc03e7; /*FONDO MENÚ*/
+  margin-top: 5vh;
 }
 .navbar.sticky{
   background: #222222;
@@ -125,6 +164,28 @@ body{
   top: 20px;
 }
 
+@media screen and (max-width: 767px){
+  .navbar{
+    margin-top: 8.92vh;
+  }
+  .barra-top{
+    height: 9vh;
+  }
+
+  .whats{
+    text-align: center;
+    
+  }
+  
+  .em{
+    text-align: center;
+  }
+  .clima{
+    display: none;
+  }
+
+
+}
 
 @media (max-width: 1230px) {
   .contentmenu{
@@ -186,6 +247,9 @@ body{
   .navbar .logo a{
     font-size: 27px;
   }
+
+
+
 } /*-------------FIN-------------*/
 
 
@@ -193,25 +257,66 @@ body{
 
 /*========== SECCIÓN PORTADA ==========*/
 
+@font-face {
+  font-family: Boldfinger;
+  src: url(fonts/Tunning.ttf);
+}
+
+@font-face {
+  font-family: Speed;
+  src: url(fonts/sufrimeda.ttf);
+}
+
+@font-face {
+  font-family: PoetsenOne;
+  src: url(fonts/PoetsenOne.ttf);
+}
 .bienvenido{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    color: #ffffff;
+    font-family: Boldfinger;
+    font-size: 60px;
+    color: #ffd900;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);;
+}
+
+.bienvenidomensaje{
+  font-family: Speed;
+    font-size: 25px;
+    color: #ffd900;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.438);;
 }
 
 .bienvenidomarcas{
     font-size: 17px;
     color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.438);;
 }
+
+@media screen and (max-width: 770px) {
+  .bienvenido{
+    font-size: 38px;
+}
+
+.bienvenidomensaje{
+    font-size: 20px;
+}
+
+.bienvenidomarcas{
+    font-size: 15px;
+}
+  }
 
 .divPortada {
     width: 100%;
-    height: 120%;
-    padding-top: auto;
+    height: 100vh;
     padding-left: 0;
     padding-right: 0;
-
 }
+
+@media screen and (max-width: 869px) {
+  .divPortada {
+    height: 120%;
+}
+  }
 
 .portada {
     padding: 0;
@@ -224,10 +329,21 @@ body{
 }
 
 .textoPortada {
-    width: 700px;
+    width: auto;
     padding-left: 10vh;
     padding-top: 35vh;
+    padding-right: 20vh;
 }
+
+@media screen and (max-width: 869px) {
+  .textoPortada {
+    padding-top: 35vh;
+    padding-bottom: 10vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    text-align: center;
+}
+  }
 
 @keyframes movimiento {
     from {
@@ -251,7 +367,7 @@ body{
 /*========== SECCIÓN CONÓCENOS ==========*/
 
 /*--BARRA CONÓCENOS--*/
-#barra-separadora{
+.barra-separadora{
     background-color: #2e2e2e;
     width: auto;
     margin: 20px 0px 30px 0px;
@@ -265,6 +381,15 @@ body{
     padding-left: 65px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+@media screen and (max-width: 869px) {
+  .textobarra{
+    font-size: 27px;
+    margin: auto;
+    padding-left: 0px;
+    text-align: center;
+}
+  }
 
 /*--ZONA INFORMACIÓN CONÓCENOS--*/
 .hcabrera-info{
@@ -282,6 +407,12 @@ body{
 
 .barra-separadora-2{
     padding: 0px;
+}
+
+.infosec2{
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
 }
 
 .infoizquierda{
@@ -307,10 +438,6 @@ body{
 /*▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ SECCIÓN 3 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄*/
 
 /*========== SECCIÓN SERVICIOS ==========*/
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 .servicios{
   padding: 0 40px;
   display: flex;
@@ -488,10 +615,7 @@ body{
 .cuadroImagen {
   margin-bottom: 30px;
 }
-.fondoImagenM {
-  margin-left: 100px;
-  margin-right: 100px;
-}
+
 .descripcionRepuesto {
   letter-spacing: 9px;
   text-align: center;
@@ -512,6 +636,21 @@ body{
   height: 100px;
 }
 
+.fondoImagenM {
+  margin-right: 85px;
+  margin-left: 85px;
+}
+
+@media screen and (max-width: 1080px) {
+  .fondoImagenM {   
+    margin-right: 1px;
+    margin-left: 1px;
+  }
+}
+
+
+
+
 
 /*▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ SECCIÓN 5 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄*/
 *, *:before, *:after {
@@ -523,14 +662,15 @@ body{
 
 .ventana-contacto {
   display: flex;
-  min-height: 85vh;
+  min-height: 58vh;
 }
 
 .container {
-  flex: 0 1 700px;
+  max-width: 700px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
+  
 }
 
 .screen {
@@ -585,7 +725,7 @@ body{
 }
 
 .app-title {
-  display: flex;
+  
   flex-direction: column;
   position: relative;
   color: #f5d000;
@@ -614,7 +754,8 @@ body{
 }
 
 .app-form-group.message {
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .app-form-group.buttons {
@@ -628,12 +769,13 @@ body{
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #ddd;
+  color: rgb(221, 221, 221);
   font-size: 14px;
   text-transform: initial;
   outline: none;
   transition: border-color .2s;
 }
+
 
 .app-form-control::placeholder {
   color: #666;
@@ -641,6 +783,11 @@ body{
 
 .app-form-control:focus {
   border-bottom-color: #ddd;
+}
+
+.app-form-control-incorrecto {
+  border-bottom: 2px solid rgb(199, 19, 19);
+  
 }
 
 #bEnviar {
@@ -693,21 +840,105 @@ body{
   .screen-body {
     padding: 40px;
   }
-
   .screen-body-item {
     padding: 0;
+  }
+  .app-title{
+    font-size: 27px
   }
 }
 
 
+/*ESTILO PARA ERRORES*/
+.errores{
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: rgba(214, 0, 0, 0.89);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #fff;
+  display:none;
+  font-size: 14px;
+  margin-top: -40px;
+  margin-left: 250px;
+  width: 134px;
+  padding: 3px;
+  position: absolute;
+  text-align: center;
+}
 
+.celu{
+  display: flex;
+  margin-bottom: 0;
+}
 
+.verificador{
+  margin-bottom: 0;
+margin-top: 8px;
+margin-right: 5px;
+color: #f5d000;
+}
+
+#itMensaje{
+  height: 60px;
+}
+
+/*validaciones de formulario responsivas*/
+@media screen and (max-width: 903px) {
+  .errores {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  .errores {
+    margin-left: -140px;
+    background: rgba(223, 1, 1, 0.747);
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .errores {
+    margin-left: 280px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .errores {
+    margin-left: 250px;
+    font-size: 12px;
+    width: 119px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .errores {
+    margin-left: 210px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .errores {
+    margin-left: 170px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .errores {
+    margin-left: 120px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .errores {
+    margin-left: 80px;
+  }
+}
 
 
 /*▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ FOOTER ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄*/
 
 /*---INICIO | FOOTER INFERIOR---*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 .textofooter{
     color: white;
 }
@@ -868,6 +1099,60 @@ footer{
 .bottom center a:hover{
   text-decoration: underline;
 }
+
+.bottoncenter{
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+  color: #696969;
+}
+
+.losfrozenteam{
+  color: #f5d000;
+}
+
+.content{
+  color: white;
+}
+
+.bloque1dolar{
+  background-color: rgb(26, 26, 26);
+  padding-bottom: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.199);
+}
+
+.titulodolar{
+  text-align: center;
+  font-family: PoetsenOne;
+  font-size: 22px;
+}
+
+.bloque2dolar{
+  color: white;
+  text-align: center;
+  background: linear-gradient(to bottom, #58cc41, #21a507);
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+#dolar{
+  margin-bottom: 5px;
+}
+
+.textvalordia{
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  color: #808080;
+}
+
+#fechadolar{
+  text-align: center;
+  margin-bottom: 2px;
+  color: #808080;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 900px) {
   footer{
     position: relative;
@@ -900,14 +1185,14 @@ footer{
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 10px;
+    right: 20px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.329);
     z-index: 100;
 }
 
@@ -921,21 +1206,3 @@ footer{
     margin-top: 16px;
 }
 
-/*ESTILO PARA ERRORES*/
-
-.errores{
-  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  -o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  background: rgba(255, 0, 0, 0.692);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  color: #fff;
-  display: none;
-  font-size: 14px;
-  margin-top: -40px;
-  margin-left: 250px;
-  width: 140px;
-  padding: 3px;
-  position: absolute;
-
-}
