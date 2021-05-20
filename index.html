@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -30,29 +28,36 @@
     <link rel="stylesheet" href="style.css">    
 </head>
 
-<body>
+<body onload="onLoad()">
 
     <!--▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ ✿HEADER✿ ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄-->
     <header>
         <!--█████ BARRA TOP CONTACTO █████-->
-        <div class="divMenu">
-            <div class="container-barra">
-                 <span class="row texto-barra">
-                    <span class="col-sm-12 col-md-6 contIzq">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
-                            <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                        </svg>
-                        <i class="bi bi-telephone-inbound">WhatsApp: +569 82400802</i> 
-                    </span>
-                    <span class="col-sm-12 col-md-6 contDer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-                        </svg>
-                        <i class="bi bi-envelope">Email: hcabrera@vtr.net</i>
-                    </span>
-                </span>
+        <div  class="barra-top" >
+            <div class="row contenido">
+      
+                <div class="col-sm-12 col-md-3 whats">WhatsApp: +569 82400802
+                </div>
+                
+                <div class="col-sm-12 col-md-3 em">Email: hcabrera@vtr.net
+                </div>
+      
+                <div class="col-sm-12 col-md-3">
+      
+                </div>
+      
+              <div class="col-sm-12 col-md-3 clima">
+                <div id="date"></div>
+                <p class="line">|</p>
+                <div id="location"></div>
+                <p class="line">|</p>
+                <p>Temperatura</p>
+                <div class="information" id="temperature"></div>
+              </div> 
             </div>
-        </div>
+          
+            
+          </div>
         <!-----FIN---->
 
         <!--█████ MENÚ █████-->
@@ -62,9 +67,9 @@
                     <a href="#">HCabrera</a>
                 </div>
                 <ul class="menu-list">
-                <div class="icon cancel-btn">
+                <li class="icon cancel-btn">
                     <i class="fas fa-times"></i>
-                </div>
+                </li>
                 <li><a href="#sec1">Inicio</a></li>
                 <li><a href="#sec2">Nosotros</a></li>
                 <li><a href="#sec3">Servicios</a></li>
@@ -136,8 +141,8 @@
         <!--█████ CONÓCENOS █████-->
 
         <!--BARRA CONÓCENOS-->
-        <div id="barra-separadora">
-            <h2 class="textobarra">C O N Ó C E N O S</h2>
+        <div class="barra-separadora">
+            <h2 class="textobarra">N O S O T R O S</h2>
         </div><!-----FIN---->
 
         <!--ZONA INFORMACIÓN CONÓCENOS-->
@@ -163,7 +168,7 @@
                 </p>
             </div>
             <div class="col-sm-12 col-md-4">
-                <img class="infoderecha" src="imagenes/maquinas/contenedor maquina.png" alt="maquina_contenedor">
+                <img class="infoderecha" src="imagenes/maquinas/contenedor_maquina.png" alt="maquina_contenedor">
             </div>
         </div>
         <!-----FIN---->
@@ -175,7 +180,7 @@
         <!--█████ SERVICIOS █████-->
 
          <!--BARRA SERVICIOS-->
-         <div id="barra-separadora">
+         <div class="barra-separadora">
             <h2 class="textobarra">S E R V I C I O S</h2>
         </div>
 
@@ -188,7 +193,7 @@
         <div class="servicios">
             <div class="card">
                 <div class="img">
-                    <img src="imagenes/Carrusel/c2.jpg">
+                    <img src="imagenes/Carrusel/c2.jpg" alt="imagen">
                 </div>
                 <div class="top-text">
                     <div class="name">Annie Lea</div><p>Apps Developer</p>
@@ -204,7 +209,7 @@
             </div>
             <div class="card">
                 <div class="img">
-                    <img src="imagenes/Carrusel/c11.jpg">
+                    <img src="imagenes/Carrusel/c11.jpg" alt="imagen">
                 </div>
                 <div class="top-text">
                     <div class="name">Eliana Maia</div><p>Website Developer</p>
@@ -220,7 +225,7 @@
             </div>
             <div class="card">
                 <div class="img">
-                    <img src="imagenes/Carrusel/c5.jpg">
+                    <img src="imagenes/Carrusel/c5.jpg" alt="imagen">
                 </div>
                 <div class="top-text">
                     <div class="name">Harley Briana</div><p>Graphic Developer</p>
@@ -240,7 +245,7 @@
         <div class="servicios">
             <div class="card">
                 <div class="img">
-                    <img src="imagenes/Carrusel/c1.jpg">
+                    <img src="imagenes/Carrusel/c1.jpg" alt="imagen">
                 </div>
                 <div class="top-text">
                     <div class="name">Annie Lea</div><p>Apps Developer</p>
@@ -256,7 +261,7 @@
             </div>
             <div class="card">
                 <div class="img">
-                    <img src="imagenes/Carrusel/c4.jpg">
+                    <img src="imagenes/Carrusel/c4.jpg" alt="imagen">
                 </div>
                 <div class="top-text">
                     <div class="name">Eliana Maia</div><p>Website Developer</p>
@@ -272,7 +277,7 @@
             </div>
             <div class="card">
                 <div class="img">
-                    <img src="imagenes/Carrusel/c6.jpg">
+                    <img src="imagenes/Carrusel/c6.jpg" alt="imagen">
                 </div>
                 <div class="top-text">
                     <div class="name">Harley Briana</div><p>Graphic Developer</p>
@@ -296,11 +301,9 @@
     <!--▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ SECCIÓN 4 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄-->
     <!-- ZONA INFORMACIÓN REPUESTOS-->
     <section id="sec4">
-    <div id="barra-separadora">
+    <div class="barra-separadora">
     <h2 class="textobarra">R E P U E S T O S</h2>
      </div>
-    <div class="divMarcas">
-    <div class="col-md-12">
         <div class="col-md-12">
             <div class="row clearfix cuadroImagen">
                 <div class="col-md-3 col-sm-6 col-xs-12">
@@ -457,7 +460,7 @@
         <!--█████ CONTACTO █████-->
         
          <!--BARRA CONTACTO-->
-         <div id="barra-separadora">
+         <div class="barra-separadora">
             <h2 class="textobarra">C O N T A C T O</h2>
         </div>
 
@@ -486,23 +489,23 @@
                     <div class="app-contact">Contacto Directo: +569 82400802</div>
                   </div>
                   <div class="screen-body-item">
-                    <div class="app-form">
-                      <div class="app-form-group">
-                        <input type="text" id="itNombre" class="app-form-control" placeholder="NOMBRE">
-                        <div id="mensaje1" class="errores">Nombre inválido</div>
+                    <div id="formulario" class="app-form">
+                      <div id="gruponombre" class="app-form-group">
+                        <input type="text" name="nombre" id="itNombre" class="app-form-control" placeholder="NOMBRE">
+                        <div id="mensaje1" class="errores">¡Nombre inválido!</div>
                     </div>
-                      <div class="app-form-group">
-                        <input type="text" id="itEmail" class="app-form-control" placeholder="EMAIL">
-                        <div id="mensaje2" class="errores">Email inválido</div>
+                      <div id="grupoemail" class="app-form-group">
+                        <input type="text" name="email" id="itEmail" class="app-form-control" placeholder="EMAIL">
+                        <div id="mensaje2" class="errores">¡Email inválido!</div>
                     </div>
-                      <div class="app-form-group celu">
+                      <div id="grupocelular" class="app-form-group celu">
                           <p class="verificador">+569</p>
-                        <input type="text" id="itCelular" maxlength="8" class="app-form-control integer" placeholder="CELULAR (8 dígitos)">
+                        <input type="text" name="celular" id="itCelular" maxlength="8" class="app-form-control integer" placeholder="CELULAR (8 dígitos)">
                     </div>
-                    <div id="mensaje3" class="errores">Celular inválido</div>
-                      <div class="app-form-group message">
-                        <input type="text" id="itMensaje" maxlength="2000" class="mensaje-contacto app-form-control" placeholder="MENSAJE">
-                        <div id="mensaje4" class="errores">Escribe un mensaje</div>
+                    <div id="mensaje3" class="errores">¡Celular inválido!</div>
+                      <div id="grupomensaje" class="app-form-group message">
+                        <input type="text" name="mensaje" id="itMensaje" maxlength="2000" class="mensaje-contacto app-form-control" placeholder="MENSAJE (max. 2000 carácteres)">
+                        <div id="mensaje4" class="errores">¡Escribe un mensaje!</div>
                     </div>
                       <div class="app-form-group buttons">
                         <button type="submit" id="bEnviar" class="boton">ENVIAR</button>
@@ -535,6 +538,22 @@
             </div>
           </div>
           <!--UBICACIÓN-->
+          <div class="right box">
+            <h2 class="titulofooter">VALOR MONEDA</h2>
+            <div class="content">
+              <p>El valor de nuestros repuestos dependerá del valor actual del Dolar.</p>
+              <div class="bloque1dolar">
+              <h3 class="titulodolar">VALOR DOLAR</h3>
+              <div class="bloque2dolar">
+                <p id="dolar"></p>
+              </div>
+              <p class="textvalordia">Valor del día:</p>
+              <p id="fechadolar"></p>
+            </div>
+            </div>
+            
+          </div>
+          <!--VALOR MONEDA-->
           <div class="center box">
             <h2 class="titulofooter">Ubicación</h2>
             <div class="content">
@@ -552,27 +571,12 @@
               </div>
             </div>
           </div>
-          <!--VALOR MONEDA-->
-          <div class="right box">
-            <h2 class="titulofooter">VALOR MONEDA</h2>
-            <div class="content">
-              <p>El valor de nuestros repuestos dependerá del valor actual del Dolar.</p>
-              <div class="bloque1dolar">
-              <h3 class="titulodolar">VALOR DOLAR</h3>
-              <div class="bloque2dolar">
-                <p id="dolar"></p>
-              </div>
-              <p class="textvalordia">Valor del día:</p>
-              <p id="fechadolar"></p>
-            </div>
-            </div>
-          </div>
         </div>
         <div class="bottom">
-          <center>
-            <span class="credit">Creado por <a href="https://www.codingnepalweb.com">LOS FROZEN TEAM</a> | </span>
+          <div class="bottoncenter">
+            <span class="credit">Creado por <a class="losfrozenteam" href="https://www.concierto.cl/wp-content/uploads/2020/10/174a3f4fa44c7bb22b3b6429cb4ea44c-768x432.png">LOS FROZEN TEAM</a> | </span>
             <span class="far fa-copyright"></span><span> 2021 Todos los derechos reservados uwu.</span>
-          </center>
+          </div>
         </div><!-----FIN---->
 
       </footer>
@@ -593,8 +597,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/jquery.numeric.js"></script>
+    <script src="js/clima.js"></script>
     <script src="js/script.js"></script>
 </body>
-<html>
+</html>

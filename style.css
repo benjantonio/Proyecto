@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 /* ✿BODY✿ ◕‿◕*/
 body{
     background-color: #f3f3f3;
@@ -8,10 +12,10 @@ body{
 /*========== HEADER SUPERIOR ==========*/
 
 /*-----BARRA TOP CONTACTO-----*/
-    .divMenu {
+    .barra-top {
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
-        background: #000000;
+        background: linear-gradient(to bottom, #494949, #1a1a1a);
         position: fixed;
         width: 100%;
         height: 5vh;
@@ -19,19 +23,49 @@ body{
         z-index: 2;
     }
     
-    .contIzq {
-        text-align: center;
-    }
-
-    .contDer {
-        text-align: center;
-        padding-right: 0%;
-        margin-right: 0%;
+    .contenido{
+      margin-top: 10px;
     }
     
-/*---------MENÚ-----------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    .whats{
+      text-align: right;
+    }
+    
+    
+    .clima{
+      display: flex;
+    }
+    
+    .line{
+      margin: 0px 4px 0px 4px;
+    }
+    
+    .information{
+      margin-left: 4px;
+    }
 
+    @media screen and (max-width: 1225px){
+      .clima{
+        font-size: 12px;
+      }
+
+      .whats{
+        font-size: 14px;
+      }
+
+      .em{
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 967px){
+      .clima{
+        font-size: 9px;
+      }
+    }
+
+
+/*---------MENÚ-----------*/
 .logo-menu{
   width: 40%;
 }
@@ -132,11 +166,25 @@ body{
 
 @media screen and (max-width: 767px){
   .navbar{
-    margin-top: 8vh;
+    margin-top: 8.92vh;
   }
-  .divMenu{
-    height: 10vh;
+  .barra-top{
+    height: 9vh;
   }
+
+  .whats{
+    text-align: center;
+    
+  }
+  
+  .em{
+    text-align: center;
+  }
+  .clima{
+    display: none;
+  }
+
+
 }
 
 @media (max-width: 1230px) {
@@ -215,12 +263,7 @@ body{
 }
 
 @font-face {
-  font-family: speed;
-  src: url(fonts/sufrimeda.ttf);
-}
-
-@font-face {
-  font-family: sufrimeda;
+  font-family: Speed;
   src: url(fonts/sufrimeda.ttf);
 }
 
@@ -228,7 +271,6 @@ body{
   font-family: PoetsenOne;
   src: url(fonts/PoetsenOne.ttf);
 }
-
 .bienvenido{
     font-family: Boldfinger;
     font-size: 60px;
@@ -266,7 +308,6 @@ body{
 .divPortada {
     width: 100%;
     height: 100vh;
-    padding-top: auto;
     padding-left: 0;
     padding-right: 0;
 }
@@ -326,7 +367,7 @@ body{
 /*========== SECCIÓN CONÓCENOS ==========*/
 
 /*--BARRA CONÓCENOS--*/
-#barra-separadora{
+.barra-separadora{
     background-color: #2e2e2e;
     width: auto;
     margin: 20px 0px 30px 0px;
@@ -397,10 +438,6 @@ body{
 /*▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ SECCIÓN 3 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄*/
 
 /*========== SECCIÓN SERVICIOS ==========*/
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 .servicios{
   padding: 0 40px;
   display: flex;
@@ -625,7 +662,7 @@ body{
 
 .ventana-contacto {
   display: flex;
-  min-height: 85vh;
+  min-height: 58vh;
 }
 
 .container {
@@ -732,12 +769,13 @@ body{
   background: none;
   border: none;
   border-bottom: 1px solid #666;
-  color: #ddd;
+  color: rgb(221, 221, 221);
   font-size: 14px;
   text-transform: initial;
   outline: none;
   transition: border-color .2s;
 }
+
 
 .app-form-control::placeholder {
   color: #666;
@@ -745,6 +783,11 @@ body{
 
 .app-form-control:focus {
   border-bottom-color: #ddd;
+}
+
+.app-form-control-incorrecto {
+  border-bottom: 2px solid rgb(199, 19, 19);
+  
 }
 
 #bEnviar {
@@ -797,26 +840,105 @@ body{
   .screen-body {
     padding: 40px;
   }
-
   .screen-body-item {
     padding: 0;
   }
-
   .app-title{
     font-size: 27px
   }
 }
 
 
+/*ESTILO PARA ERRORES*/
+.errores{
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  -o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: rgba(214, 0, 0, 0.89);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #fff;
+  display:none;
+  font-size: 14px;
+  margin-top: -40px;
+  margin-left: 250px;
+  width: 134px;
+  padding: 3px;
+  position: absolute;
+  text-align: center;
+}
 
+.celu{
+  display: flex;
+  margin-bottom: 0;
+}
 
+.verificador{
+  margin-bottom: 0;
+margin-top: 8px;
+margin-right: 5px;
+color: #f5d000;
+}
 
+#itMensaje{
+  height: 60px;
+}
+
+/*validaciones de formulario responsivas*/
+@media screen and (max-width: 903px) {
+  .errores {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  .errores {
+    margin-left: -140px;
+    background: rgba(223, 1, 1, 0.747);
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .errores {
+    margin-left: 280px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .errores {
+    margin-left: 250px;
+    font-size: 12px;
+    width: 119px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .errores {
+    margin-left: 210px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .errores {
+    margin-left: 170px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .errores {
+    margin-left: 120px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .errores {
+    margin-left: 80px;
+  }
+}
 
 
 /*▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ FOOTER ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄*/
 
 /*---INICIO | FOOTER INFERIOR---*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 .textofooter{
     color: white;
 }
@@ -978,6 +1100,16 @@ footer{
   text-decoration: underline;
 }
 
+.bottoncenter{
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+  color: #696969;
+}
+
+.losfrozenteam{
+  color: #f5d000;
+}
+
 .content{
   color: white;
 }
@@ -999,7 +1131,7 @@ footer{
 .bloque2dolar{
   color: white;
   text-align: center;
-  background-color: rgb(33, 165, 7);
+  background: linear-gradient(to bottom, #58cc41, #21a507);
   box-shadow: 0 0 2px rgba(0,0,0,0.3);
 }
 
@@ -1034,9 +1166,6 @@ footer{
     margin: 5px 0;
   }
 }
-
-
-
 /*-------------FIN-------------*/
 
 
@@ -1056,8 +1185,8 @@ footer{
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 10px;
+    right: 20px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -1076,41 +1205,4 @@ footer{
 .my-whatsappfloat {
     margin-top: 16px;
 }
-
-/*ESTILO PARA ERRORES*/
-
-.errores{
-  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  -o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  background: rgba(255, 0, 0, 0.692);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  color: #fff;
-  display:none;
-  font-size: 14px;
-  margin-top: -40px;
-  margin-left: 250px;
-  width: 140px;
-  padding: 3px;
-  position: absolute;
-}
-
-.celu{
-  display: flex;
-  margin-bottom: 0;
-}
-
-.verificador{
-  margin-bottom: 0;
-margin-top: 8px;
-margin-right: 5px;
-color: #f5d000;
-}
-
-#itMensaje{
-  height: 60px;
-}
-
-
-
 
